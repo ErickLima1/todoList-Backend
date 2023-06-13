@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+body {
+    background-color: #f1f1f1c2;
+}
+
+main {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 40px auto;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.add-form {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 10px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button[type='submit'] {
+    background-color: #DDD;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button[type='submit']:hover {
+    background-color: rgba(56, 105, 105, 0.76);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    padding: 10px 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    text-align: center;
+}
+
+td:hover {
+    background-color: #ddddddbe;
+}
+
+.select-event {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    font-weight: 8px;
+    text-transform: capitalize;
+    background-color: white;
+    font-weight: 600;
+}
+
+.btn-action {
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.btn-action:nth-child(1) {
+    background-color: orange;
+    margin-right: 5px;
+}
+.btn-action:nth-child(2) {
+    background-color: rgba(237, 42, 42, 0.9);
+}
