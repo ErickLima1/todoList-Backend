@@ -3,7 +3,7 @@ const addForm = document.querySelector('.add-form');
 const inputTask = document.querySelector('.input-task');
 //http://localhost:3031/tarefas
 const fetchTasks = async () => {
-    const respose = await fetch('https://todo-list-backend-psi.vercel.app/tarefas');
+    const respose = await fetch('https://todo-list-backend-psi.vercel.app');
     const task = await respose.json();
     return task
 }
