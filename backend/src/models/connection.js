@@ -11,13 +11,7 @@ require('dotenv').config();
 
 
 //Criando Objeto com modules
-const connection = mysql.createPool( {
-    host: process.env.MYSQL_HOST,
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DB,
-});
-
-
+const connection = mysql.createPool(process.env.DATABASE_URL);
+console.log('Connected to PlanetScale!');
 //Exportando Modulo 
 module.exports = connection;
