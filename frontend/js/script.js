@@ -13,7 +13,7 @@ const addTask = async (event) => {
     event.preventDefault();
     const task = {titulo: inputTask.value };
 
-    await fetch('https://todo-list-backend-psi.vercel.app/tarefas', {
+    await fetch('https://todo-list-backend-mauve.vercel.app/tarefas', {
         method: 'post',
         headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify(task)
@@ -32,7 +32,7 @@ const deleteTask = async (id) => {
 
 const updateTask = async ({id, titulo, crate_at, status}) => {
     
-    await fetch(`http://localhost:3031/tarefas/${id}`, {
+    await fetch(`https://todo-list-backend-mauve.vercel.app/tarefas/${id}`, {
         method: 'put',
         headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify({ titulo, crate_at, status })
